@@ -24,7 +24,7 @@ countDown()
 
 setInterval(countDown, 1000)
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     function scrollTopBack() {
         let scrollTopButton = document.querySelector("#scrollUp");
         window.onscroll = function() {
@@ -34,6 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 scrollTopButton.classList.remove('scrollActive');
             }
+        }
+        scrollTopButton.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     }
     scrollTopBack();

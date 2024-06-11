@@ -536,16 +536,17 @@ h1{
         cursor: pointer;
         z-index: 500;
         display: none;
-        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
         background: var(--bg-danger);
     }
-    
     #scrollUp span {
         line-height: 2.625rem;
+        color: white;
     }
-    
     #scrollUp.scrollActive {
         display: block;
+        color: white;
     }
     
     
@@ -635,5 +636,10 @@ h1{
             font-size: 0.625rem;
         }
     }
-            
-              
+    .banner2{
+        object-fit: cover;
+        object-position: center top; /* Adjust as needed */
+        width: 100%;
+        height: ;
+    }
+    
