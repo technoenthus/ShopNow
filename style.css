@@ -59,6 +59,43 @@ h1{
     .about .col-md-9 {
         text-align: left;
     }
+
+
+    
+body {
+    padding-top: 70px; 
+}
+
+.navbar {
+    background-color: grey; 
+    border-bottom: 1px solid #484a4c;
+    z-index: 1000; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top; 
+}
+.carousel-caption {
+    bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5, .carousel-caption p {
+        font-size: 1.5rem;
+    }
+}
+
     .offers{
         padding-top:4rem;
     }
@@ -640,6 +677,5 @@ h1{
         object-fit: cover;
         object-position: center top; /* Adjust as needed */
         width: 100%;
-        height: ;
     }
     
