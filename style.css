@@ -675,7 +675,7 @@ body {
     }
     .banner2{
         object-fit: cover;
-        object-position: center top; /* Adjust as needed */
+        object-position: center top;
         width: 100%;
     }
     
