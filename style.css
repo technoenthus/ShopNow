@@ -59,41 +59,88 @@ h1{
     .about .col-md-9 {
         text-align: left;
     }
-
-
-    
-body {
-    padding-top: 70px; 
+/* Navbar styles */
+.navbar {
+    background-color: white; /* Ensures the navbar has a white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better visibility */
 }
 
-.navbar {
-    background-color: grey; 
-    border-bottom: 1px solid #484a4c;
-    z-index: 1000; 
+.navbar-brand h1 {
+    margin: 0;
+}
+
+/* Carousel styles */
+#carouselExampleDark {
+    margin-top: 70px; /* Adjust this value to match the height of your navbar */
 }
 
 .carousel-item img {
-    width: 100%;
-    height: auto;
     object-fit: cover;
-    object-position: top; 
+    object-position: top; /* Ensures the top part of the image is always shown */
+    width: 100%;
+    height: auto; /* Automatically adjusts height based on the width */
+    max-height: 75vh; /* Sets the maximum height for the carousel images */
 }
+
+/* Carousel caption */
 .carousel-caption {
-    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 55%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-caption h5 {
-    font-size: 2rem;
+/* Navbar link hover */
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 0, 0, 0.596) !important;
+    transition: color 0.3s;
 }
 
-.carousel-caption p {
-    font-size: 1.5rem;
+/* About section */
+.about p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
 }
 
-@media (max-width: 768px) {
-    .carousel-caption h5, .carousel-caption p {
-        font-size: 1.5rem;
-    }
+.about button {
+    margin-top: 20px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .col-md-9 {
+    text-align: left;
+}
+
+/* Additional carousel item styles */
+.carousel-item h5 {
+    font-weight: 600;
+}
+
+.carousel-item p {
+    font-weight: 600;
+}
+
+.carousel-item p span {
+    font-weight: 700;
 }
 
     .offers{
@@ -675,7 +722,8 @@ body {
     }
     .banner2{
         object-fit: cover;
-        object-position: center top;
+        object-position: center top; /* Adjust as needed */
         width: 100%;
+        height: ;
     }
     
